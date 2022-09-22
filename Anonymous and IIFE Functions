@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+var arr =[10,12,14,15,16,17,18,19,20];
+var temp = [];
+
+var vichu = function(arr){
+  
+  for(var i=0; i<arr.length; i++){
+    
+    if(arr[i]%2!==0){
+      
+      temp.push(arr[i]);
+    }
+  }
+  
+  return temp;
+  
+}
+
+console.log(vichu(arr));
