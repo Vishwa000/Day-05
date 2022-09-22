@@ -1,10 +1,9 @@
+Do the below programs in Anonymous & IIFE.
 
+a. Print the odd number in an array.
 
-
-
-
-
-
+// Anonymous function.
+//INPUT
 var arr =[10,12,14,15,16,17,18,19,20];
 var temp = [];
 
@@ -23,3 +22,10 @@ var vichu = function(arr){
 }
 
 console.log(vichu(arr));
+
+//OUTPUT
+[ 15, 17, 19 ]
+
+//IIFE functions
+//INPUT
+
