@@ -26,6 +26,47 @@ console.log(vichu(arr));
 //OUTPUT
 [ 15, 17, 19 ]
 
-//IIFE functions
-//INPUT
+
+c.
+
+
+var sum = 0;
+
+var res = function(arr){
+
+for (var i = 0; i< arr.length; i++) {
+  sum += arr[i];
+  
+}
+  
+  return sum;
+  
+
+}
+
+console.log(res([2,4,6,8,10,12,14,16,18]));
+
+
+d.
+var a = [5, 9, 63, 29, 35, 6, 55, 23]
+var temp = [];
+
+var  prime = function(item){
+    var identifier = item / 2  ;
+      for (var j = 2; j <= identifier; j++) {
+       if (item % j == 0) { // modulous
+        return false;
+       } 
+     }
+     return true;
+}
+for (var i = 0; i < a.length; i++) {
+  if (prime(a[i])) {
+      temp.push(a[i])
+  }
+}
+
+console.log(temp);
+
+
 
