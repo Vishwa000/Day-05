@@ -26,7 +26,17 @@ console.log(vichu(arr));
 //OUTPUT
 [ 15, 17, 19 ]
 
+//IIFE Function.+
 
+(function foo(arr){
+  for(var i=0; i<arr.length; i++){
+    
+    if(arr[i]%2!==0)
+      
+      console.log(arr[i])}
+      
+      }) 
+      ([10,12,14,15,16,17,18,19,20])
 c.
 
 
