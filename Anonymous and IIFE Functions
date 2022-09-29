@@ -78,5 +78,18 @@ for (var i = 0; i < a.length; i++) {
 
 console.log(temp);
 
+b.
+(function res(str){
+  str = str.toLowerCase().split(' ');
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+  }
+  return str.join(' ');
+
+console.log(res);
+
+})
+([10,12,14,15,16,17,18,19,20])
+
 
 
