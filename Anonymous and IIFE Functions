@@ -13,7 +13,7 @@ var vichu = function(arr){
     
     if(arr[i]%2!==0){
       
-      temp.push(arr[i]);
+      temp.push(arr[i]); 
     }
   }
   
@@ -23,21 +23,54 @@ var vichu = function(arr){
 
 console.log(vichu(arr));
 
-//OUTPUT
-[ 15, 17, 19 ]
-
-//IIFE Function.+
+//IIFE Function.
 
 (function foo(arr){
   for(var i=0; i<arr.length; i++){
-    
+     
     if(arr[i]%2!==0)
       
       console.log(arr[i])}
       
       }) 
-      ([10,12,14,15,16,17,18,19,20])
-c.
+      ([10,12,14,15,16,17,18,19,20]);
+      
+      
+//Arrow Function:
+
+var arr = [10,12,14,15,16,17,18,19,20];
+
+ var odd=arr.filter((ele)=>ele%2===0);
+ 
+console.log(odd);
+
+B. Convert all the strings to title caps in a string array.
+
+var res = function([sentence]){
+  return sentence.toUpperCase();
+  
+}  
+console.log(res(['The quick brown fox jumps over the lazy dog.']));
+
+//IIFE Function:
+
+(function res(arr){
+   arr.toUpperCase();
+  console.log(arr.toUpperCase());
+  
+})("trust me i'm a developer");
+
+//Arrow Function:
+
+var res = (sen)=>{
+ 
+   return sen.toUpperCase();
+  
+}
+console.log(res("trust me i'm a developer"));
+
+
+C. 
 
 
 var sum = 0;
@@ -77,19 +110,3 @@ for (var i = 0; i < a.length; i++) {
 }
 
 console.log(temp);
-
-b.
-(function res(str){
-  str = str.toLowerCase().split(' ');
-  for (var i = 0; i < str.length; i++) {
-    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
-  }
-  return str.join(' ');
-
-console.log(res);
-
-})
-([10,12,14,15,16,17,18,19,20])
-
-
-
