@@ -105,17 +105,34 @@ console.log(sum);
 })
 ([2,4,6,8,10,12,14,16,18]);
 
+// Arrow Function:
+
+var sum = 0;
+
+var res = (arr)=>{
+
+for (var i = 0; i< arr.length; i++) {
+  
+  if(sum += arr[i]);
+  
+}
+return sum;
+
+}
+console.log(res([2,4,6,8,10,12,14,16,18]));
 
 
+D. Return all the prime number in an array:
 
-d.
+// Anonymous function.
+
 var a = [5, 9, 63, 29, 35, 6, 55, 23]
 var temp = [];
 
 var  prime = function(item){
     var identifier = item / 2  ;
       for (var j = 2; j <= identifier; j++) {
-       if (item % j == 0) { // modulous
+       if (item % j == 0) { 
         return false;
        } 
      }
@@ -128,3 +145,19 @@ for (var i = 0; i < a.length; i++) {
 }
 
 console.log(temp);
+
+// Arrow Function:
+
+var newArray = [1, 3, 2, 5, 10];
+var isPrime = num => {
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false;
+  }
+  return num !== 1;
+};
+
+var PrimeArray = newArray.filter(ele => isPrime(ele));
+console.log(PrimeArray);
+
+// IIFE Function:
+
