@@ -3,7 +3,7 @@ Do the below programs in Anonymous & IIFE.
 a. Print the odd number in an array.
 
 // Anonymous function.
-//INPUT
+
 var arr =[10,12,14,15,16,17,18,19,20];
 var temp = [];
 
@@ -45,14 +45,15 @@ var arr = [10,12,14,15,16,17,18,19,20];
 console.log(odd);
 
 B. Convert all the strings to title caps in a string array.
+// Anonymous function.
 
 var res = function([sentence]){
   return sentence.toUpperCase();
   
 }  
-console.log(res(['The quick brown fox jumps over the lazy dog.']));
+console.log(res(["trust me i'm a developer"]));
 
-//IIFE Function:
+// IIFE Function:
 
 (function res(arr){
    arr.toUpperCase();
@@ -60,7 +61,7 @@ console.log(res(['The quick brown fox jumps over the lazy dog.']));
   
 })("trust me i'm a developer");
 
-//Arrow Function:
+// Arrow Function:
 
 var res = (sen)=>{
  
@@ -70,8 +71,8 @@ var res = (sen)=>{
 console.log(res("trust me i'm a developer"));
 
 
-C. 
-
+C. Sum of all Numbers in an Array
+// Anonymous function.
 
 var sum = 0;
 
@@ -83,11 +84,28 @@ for (var i = 0; i< arr.length; i++) {
 }
   
   return sum;
-  
-
 }
 
 console.log(res([2,4,6,8,10,12,14,16,18]));
+
+// IIFE Function:
+
+var sum = 0;
+
+(function(arr){
+
+for (var i = 0; i< arr.length; i++) {
+  
+  if(sum += arr[i]);
+  
+}
+
+console.log(sum);
+
+})
+([2,4,6,8,10,12,14,16,18]);
+
+
 
 
 d.
