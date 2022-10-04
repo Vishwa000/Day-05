@@ -159,5 +159,19 @@ var isPrime = num => {
 var PrimeArray = newArray.filter(ele => isPrime(ele));
 console.log(PrimeArray);
 
-// IIFE Function:
+D. 
+var res = function (str) {
+
+    var len = str.length;
+    var mid = Math.floor(len/2);
+
+    for ( var i = 0; i < mid; i++ ) {
+        if (str[i] !== str[len - 1 - i]) {
+            return false;
+        }
+    }
+
+    return true;
+}
+console.log(res(12321, 101, 5115,'guvi'));
 
