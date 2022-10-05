@@ -159,6 +159,17 @@ var isPrime = num => {
 var PrimeArray = newArray.filter(ele => isPrime(ele));
 console.log(PrimeArray);
 
+// IIFE Function:
+
+var num = [5, 9, 63, 29, 35, 6, 55, 23];
+(function isPrime(num) {
+    for (let i = 2; i * i <= num; i++){
+        if (num % i === 0) return false;
+        return num > 1;
+    }
+console.log(isPrime);
+})();
+
 E. Return all the Palindromes in an array:
 // Anonymous function.
 
@@ -186,19 +197,36 @@ console.log(palindrome("A man, a plan, a canal. Panama"));
   var re = /[\W_]/g;
   var lowRegStr = str.toLowerCase().replace(re, '');
   var reverseStr = lowRegStr.split('').reverse().join(''); 
-  return reverseStr === lowRegStr;
+  var a = reverseStr === lowRegStr;
 
-console.log(palindrome)
-})("A man, a plan, a canal. Panama"));
+console.log(a)
+})("A man, a plan, a canal. Panama");
 
 F. Return median of two sorted arrays of the same size.
-// Anonymous & IIFE Function: 
+// Anonymous Function: 
 
 const median = (a1, a2) => {
   let x = a1.concat(a2);
-  x.sort(function (a,b) {
+  var a = function (a,b) {
     return a - b;
-  });
+  }
+  let len = x.length;
+  
+  return len%2 === 0 ? (x[Math.floor(len/2)-1] + x[Math.ceil(len/2)])/2 : x[Math.floor(len/2)];
+
+}
+
+let a = [0,2,3,5,9];
+let b = [1,4];
+console.log(median(a,b));
+
+// IIFE FUNCTION:
+
+const median = (a1, a2) => {
+  let x = a1.concat(a2);
+  var a = function (a,b) {
+    return a - b;
+  }
   let len = x.length;
   
   return len%2 === 0 ? (x[Math.floor(len/2)-1] + x[Math.ceil(len/2)])/2 : x[Math.floor(len/2)];
@@ -224,15 +252,25 @@ var arr = ["apple", "mango", "apple",
     
     // IIFE Function:
     
-    
-    (function removeDuplicates(arr) {
-        return arr.filter((item,
+   (function removeDuplicates(arr) {
+    var a = arr.filter((item,
             index) => arr.indexOf(item) === index);
     
-    console.log(index);
+    console.log(a);
 })
 (["apple", "mango", "apple",
    "orange", "mango", "mango"]);
+
+H. Rotate an array by k times:
+//  Anonymous Function:
+
+var arr = ['jon','sam','vichu','gayu','ram','tree']
+var a = function (arr){
+  arr.push(arr.shift());
+  
+  return arr;
+}
+console.log(a(arr));
 
 
 
